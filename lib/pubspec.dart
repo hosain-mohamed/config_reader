@@ -56,7 +56,7 @@ dependencies:
   shimmer: ^1.1.1
   http_interceptor: ^0.3.2
   infinity_page_view: ^1.0.0
-  share: ^0.6.5+2
+  share: ^0.6.5+4
   flutter_statusbarcolor: ^0.2.3
   #file_picker: ^2.0.11
   firebase_messaging: ^8.0.0-dev.11
@@ -80,9 +80,8 @@ dependencies:
   connectivity: ^0.4.9+3
   expandable: ^4.1.4
   extended_text: ^4.0.0
-  flutter_widget_from_html: 0.5.1+4
+  # flutter_widget_from_html: ^0.5.2+1
   flutter_widget_from_html_core: 0.5.1+4
-  #  flutter_widget_from_html_core: ^0.5.1+1
   #  webview_flutter: ^1.0.1
   extended_nested_scroll_view: ^1.0.1
   extended_sliver: ^1.0.1
@@ -116,7 +115,11 @@ dependencies:
   flutter_tts: ^2.0.0
   html_unescape: ^1.0.2
   flutter_highlight: ^0.6.0
-  webview_flutter: ^1.0.7
+  webview_flutter:
+    git:
+      url: https://github.com/ourcoteam/custom_web_view.git
+      ref: master
+  rxdart: ^0.25.0
   flutter_app_badger: ^1.1.2
   app_tracking_transparency: ^1.1.0+1
   google_mobile_ads: ^0.11.0+4
@@ -138,15 +141,10 @@ dev_dependencies:
   flutter_launcher_name: ^0.0.1
   rename: ^1.2.0
   change_app_package_name: ^0.1.2
-  ${
-  remoteConfigReaderDep?'''
-config_reader:
+  config_reader:
     git:
       url: https://github.com/ourcoteam/config_reader
-      ref: master''':'''
-config_reader:
-    path: C:/Users/eldee/AndroidStudioProjects/config_reader'''
-  }
+      ref: master
   custom_flutter_launcher_name:
     git:
       url: https://github.com/ourcoteam/custom_flutter_launcher_name
@@ -175,5 +173,3 @@ flutter:
           weight: 500
         - asset: assets/fonts/SFProDisplay-Semibold.otf
           weight: 600
-''');
-}
