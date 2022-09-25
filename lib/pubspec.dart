@@ -106,6 +106,7 @@ dependencies:
   super_tooltip: ^0.9.0
   flutter_rating_bar: ^3.0.1+1
   chewie_audio: ^1.0.0+1
+  just_audio: ^0.6.15+1
   dotted_line: ^2.0.1
   drop_cap_text: ^1.0.7
   sign_in_with_apple:
